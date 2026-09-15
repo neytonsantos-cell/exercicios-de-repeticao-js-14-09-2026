@@ -10,8 +10,8 @@
 // }
 
 //* 2. **Tabuada de um número:**
-    //*     - Peça um número ao usuário.
-    //*     - Exiba a tabuada desse número de 1 a 10 usando um `for`.
+//*     - Peça um número ao usuário.
+//*     - Exiba a tabuada desse número de 1 a 10 usando um `for`.
 // const numero = parseInt(prompt("Digite um número:"));
 
 // for (let i = 1; i <= 10; i++) {
@@ -66,9 +66,9 @@
 // }
 
 //* 4. Validção de senha
-    //* - Crie uma senha fixa (ex: "1234")
-    //* - Peça ao usuário até ele acertar
-    //* - Use `while`
+//* - Crie uma senha fixa (ex: "1234")
+//* - Peça ao usuário até ele acertar
+//* - Use `while`
 // const senhaFixa = "1234";
 // let senhaUsuario = prompt("Digite a senha:");
 // while (senhaUsuario !== senhaFixa) {
@@ -104,10 +104,75 @@
 //* 1. Soma dos dígitos de um número:
 //*     - Peça ao usuário um número inteiro positivo.
 //*     - Use um `while` para somar seus dígitos.
-let numero = parseInt(prompt("Digite um número inteiro positivo:"));
-let soma = 0;
-while (numero > 0) {
-    soma += numero % 10;
-    numero = Math.floor(numero / 10);
+// let numero = parseInt(prompt("Digite um número inteiro positivo:"));
+// let soma = 0;
+// while (numero > 0) {
+//     soma += numero % 10;
+//     numero = Math.floor(numero / 10);
+// }
+// console.log(`A soma dos dígitos é: ${soma}`);
+
+//* 2. Tabuada dinâmica:
+//*     - Peça um número ao usuário.
+//*     - Mostre a tabuada de 1 até 10.
+// const numero = parseInt(prompt("Digite um número para ver a tabuada:"));
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`${numero} x ${i} = ${numero * i}`);
+// }
+
+//* 3. Inverter um número:
+//*     - Peça um número ao usuário.
+//*     - Use um `while` para inverter seus dígitos (exemplo: `123` → `321`).
+// let numero = parseInt(prompt("Digite um número para inverter:"));
+// let numeroInvertido = 0;
+// while (numero > 0) {
+//     numeroInvertido = numeroInvertido * 10 + numero % 10;
+//     numero = Math.floor(numero / 10);
+// }
+// console.log(`O número invertido é: ${numeroInvertido}`);
+
+//* 4. Maior número digitado:
+//*     - Peça 5 números ao usuário.
+//*     - Mostre qual foi o maior.
+// let maior = -Infinity;
+// for (let i = 1; i <= 5; i++) {
+//     let numero = parseFloat(prompt(`Digite o ${i}º número:`));
+//     console.log(`Número digitado: ${numero}`);
+//     if (numero > maior) {
+//         maior = numero;
+//     }
+// }
+// console.log(`O maior número digitado foi: ${maior}`);
+
+//* 5. Lista de nomes (forEach):
+//*     - Crie um array com nomes
+//*     - Percorra usando `forEach`
+//*     - Mostre cada nome no console
+// const nomes = ["Alice", "Bob", "Charlie", "David", "Eve"];
+// nomes.forEach((nome) => {
+//     console.log(nome);
+// });
+
+//! Desafio Extra
+
+//? Sistema de pedidos
+
+//* - Crie um array com 3 produtos
+//* - Use `forEach` para mostrar todos
+//* - Pergunte qual o usuário quer
+//* - Repita até ele escolher um válido
+const produtos = ["Arroz", "Feijão", "Macarrão"];
+console.log("Produtos disponíveis:");
+produtos.forEach((produto) => {
+    console.log(produto);
+});
+let produtoEscolhido = null;
+while (!produtoEscolhido) {
+    let escolha = prompt("Escolha um produto:");
+    if (produtos.includes(escolha)) {
+        produtoEscolhido = escolha;
+    } else {
+        console.log("Produto inválido. Tente novamente.");
+    }
 }
-console.log(`A soma dos dígitos é: ${soma}`);
+console.log(`Você escolheu: ${produtoEscolhido}`);
