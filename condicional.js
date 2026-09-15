@@ -138,11 +138,11 @@
 //*    - = 100 → frete grátis
 //*    - = 50 → frete 10 reais
 //*    - Senão → frete 20 reais
-let valorCompra = parseFloat(prompt("Digite o valor da compra:"));
-if (valorCompra === 100) {
-    console.log("Frete grátis");
-} else if (valorCompra === 50) {
-    console.log("Frete: R$ 10,00");
-} else {
-    console.log("Frete: R$ 20,00");
-}
+// let valorCompra = parseFloat(prompt("Digite o valor da compra:"));
+// if (valorCompra === 100) {
+//     console.log("Frete grátis");
+// } else if (valorCompra === 50) {
+//     console.log("Frete: R$ 10,00");
+// } else {
+//     console.log("Frete: R$ 20,00");
+// }

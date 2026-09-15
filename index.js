@@ -130,13 +130,77 @@
 
 //FIND
 // Retorna o primeiro elemento que satisfaz a condição
+//  let produtos = [
+//      { id: 1, nome: "Camiseta", preco: 29.99 },
+//      { id: 2, nome: "Calça", preco: 49.99 },
+//      { id: 3, nome: "Tênis", preco: 89.99 },
+//      { id: 4, nome: "Boné", preco: 19.99 }
+//  ]
 
-// let produtos = [
-//     { id: 1, nome: "Camiseta", preco: 29.99 },
-//     { id: 2, nome: "Calça", preco: 49.99 },
-//     { id: 3, nome: "Tênis", preco: 89.99 },
-//     { id: 4, nome: "Boné", preco: 19.99 }
-// ]
+//  let item = produtos.find(p => p.id === 3)
+//  console.log(item) // { id: 3, nome: "Tênis", preco: 89.99 }
 
-// let item = produtos.find(p => p.id === 3)
-// console.log(item) // { id: 3, nome: "Tênis", preco: 89.99 }
+//DIFERENÇA ENTRE FILTER E FIND
+// find -> Retorna o primeiro elemento que satisfaz a condição
+// filter -> Retorna todos os elementos que satisfazem a condição
+// let itemFiltrado = produtos.filter(p => p.id === 3)
+// console.log(itemFiltrado) // [{ id: 3, nome: "Tênis", preco: 89.99 }]
+
+//SPLIT
+// Divide uma string em um array com base em um separador
+
+// let frase = "JS é top."
+
+// let palavras = frase.split(" ");// Se tirar o espaço entre as aspas, ele vai separar cada letra em um índice do array
+// console.log(palavras); // ["JS", "é", "top."]
+
+//TRIM
+// Remove espaços em branco no início e no final de uma string
+// let nome = "   Diogo   "
+// let nomeLimpo = nome.trim()
+// console.log(nome) // "   Diogo   "
+// console.log(nomeLimpo) // "Diogo"
+
+//INCLUDES
+// Verifica se existe um valor dentro da lista e retorna true ou false
+// let frutas = ["Maçã", "Banana", "Acerola", "Uva"]
+// let frutasInclude = frutas.includes("Banana")
+// console.log(frutasInclude) // true
+
+//LOWERCASE E UPPERCASE
+// toLowerCase() -> Converte uma string para letras minúsculas
+// toUpperCase() -> Converte uma string para letras maiúsculas
+// let nome = "NEYTON"
+// let cargo = "estudante"
+
+// console.log(nome.toLowerCase()) // "neyton"
+// console.log(cargo.toUpperCase()) // "ESTUDANTE"
+
+//FOREACH
+// Percorre uma lista e executa uma função para cada elemento
+// let nomes = ["Diogo", "João", "Maria", "José"]
+// nomes.forEach(nome => console.log(`Nome: ${nome}`)) // Nome: Diogo, Nome: João, Nome: Maria, Nome: José
+
+//SOME
+// Verifica se algum elemento da lista satisfaz a condição e retorna true ou false
+// let numeros = [1, 3, 5, 8];
+// let algumPar = numeros.some(num => num % 2 === 0);
+// console.log(algumPar); // true, pois 8 é par
+
+//EVERY
+// Verifica se TODOS os elementos da lista satisfazem a condição e retorna true ou false
+// let todosPares = numeros.every(num => num % 2 === 0);
+// console.log(todosPares); // false, pois nem todos são pares
+
+//SORT
+// Ordena os elementos de uma lista com base em uma função de comparação
+let numeros = [5, 2, 9, 1, 5, 6];
+let letras = ["c", "a", "e", "b", "d"];
+
+// Ordenação crescente de números
+numeros.sort((a, b) => a - b);
+console.log(numeros); // [1, 2, 5, 5, 6, 9]
+
+// Ordenação crescente de letras
+letras.sort();
+console.log(letras); // ["a", "b", "c", "d", "e"]
