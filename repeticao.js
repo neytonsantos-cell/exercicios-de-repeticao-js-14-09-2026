@@ -161,18 +161,18 @@
 //* - Use `forEach` para mostrar todos
 //* - Pergunte qual o usuário quer
 //* - Repita até ele escolher um válido
-const produtos = ["Arroz", "Feijão", "Macarrão"];
-console.log("Produtos disponíveis:");
-produtos.forEach((produto) => {
-    console.log(produto);
-});
-let produtoEscolhido = null;
-while (!produtoEscolhido) {
-    let escolha = prompt("Escolha um produto:");
-    if (produtos.includes(escolha)) {
-        produtoEscolhido = escolha;
-    } else {
-        console.log("Produto inválido. Tente novamente.");
-    }
-}
-console.log(`Você escolheu: ${produtoEscolhido}`);
+// const produtos = ["Arroz", "Feijão", "Macarrão"];
+// console.log("Produtos disponíveis:");
+// produtos.forEach((produto) => {
+//     console.log(produto);
+// });
+// let produtoEscolhido = null;
+// while (!produtoEscolhido) {
+//     let escolha = prompt("Escolha um produto:");
+//     if (produtos.includes(escolha)) {
+//         produtoEscolhido = escolha;
+//     } else {
+//         console.log("Produto inválido. Tente novamente.");
+//     }
+// }
+// console.log(`Você escolheu: ${produtoEscolhido}`);
