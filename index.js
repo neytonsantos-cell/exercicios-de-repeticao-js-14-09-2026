@@ -194,13 +194,13 @@
 
 //SORT
 // Ordena os elementos de uma lista com base em uma função de comparação
-let numeros = [5, 2, 9, 1, 5, 6];
-let letras = ["c", "a", "e", "b", "d"];
+// let numeros = [5, 2, 9, 1, 5, 6];
+// let letras = ["c", "a", "e", "b", "d"];
 
-// Ordenação crescente de números
-numeros.sort((a, b) => a - b);
-console.log(numeros); // [1, 2, 5, 5, 6, 9]
+// // Ordenação crescente de números
+// numeros.sort((a, b) => a - b);
+// console.log(numeros); // [1, 2, 5, 5, 6, 9]
 
-// Ordenação crescente de letras
-letras.sort();
-console.log(letras); // ["a", "b", "c", "d", "e"]
+// // Ordenação crescente de letras
+// letras.sort();
+// console.log(letras); // ["a", "b", "c", "d", "e"]

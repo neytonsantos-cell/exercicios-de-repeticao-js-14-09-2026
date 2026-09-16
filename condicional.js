@@ -146,3 +146,62 @@
 // } else {
 //     console.log("Frete: R$ 20,00");
 // }
+
+//* 2. Acesso por idade e convite
+//*     - Variáveis `idade` e `temConvite`
+//*     - Se idade >= 18 OU tem convite → pode entrar
+//*     - Senão → barrado
+// let idade = parseInt(prompt("Digite sua idade:"));
+// let temConvite = prompt("Você tem convite? (sim/não)").toLowerCase() === "sim";
+// if (idade >= 18 || temConvite) {
+//     console.log("Pode entrar");
+// } else {
+//     console.log("Barrado");
+// }
+
+//* 3. Conversão de notas para conceitos:
+//*     - O usuário insere uma nota (0-100).
+//*     - Converta para conceitos:
+//*         - `A` (90-100), `B` (80-89), `C` (70-79), `D` (60-69), `F` (<60).
+// let nota = parseFloat(prompt("Digite a nota (0-100):"));
+// if (nota >= 90 && nota <= 100) {
+//     console.log("Conceito: A");
+// } else if (nota >= 80 && nota < 90) {
+//     console.log("Conceito: B");
+// } else if (nota >= 70 && nota < 80) {
+//     console.log("Conceito: C");
+// } else if (nota >= 60 && nota < 70) {
+//     console.log("Conceito: D");
+// } else {
+//     console.log("Conceito: F");
+// }
+
+//* 4. Cálculo de IMC:
+//*     - Peça peso e altura.
+//*     - Calcule o IMC e classifique como abaixo do peso, normal, sobrepeso ou obesidade.
+// let peso = parseFloat(prompt("Digite seu peso (kg):"));
+// let altura = parseFloat(prompt("Digite sua altura (m):"));
+// let imc = peso / (altura * altura);
+// if (imc < 18.5) {
+//     console.log("IMC: " + imc.toFixed(2) + " - Abaixo do peso");
+// } else if (imc >= 18.5 && imc < 25) {
+//     console.log("IMC: " + imc.toFixed(2) + " - Peso normal");
+// } else if (imc >= 25 && imc < 30) {
+//     console.log("IMC: " + imc.toFixed(2) + " - Sobrepeso");
+// } else {
+//     console.log("IMC: " + imc.toFixed(2) + " - Obesidade");
+// }
+
+//* 5. Verificação de estoque
+//*     - Variável `estoque`
+//*     - 10 → “Produto disponível”
+//*     - entre 1 e 10 → “Últimas unidades”
+//*     - 0 → “Esgotado”
+// let estoque = parseInt(prompt("Digite a quantidade em estoque:"));
+// if (estoque >= 10) {
+//     console.log("Produto disponível");
+// } else if (estoque > 0 && estoque < 10) {
+//     console.log("Últimas unidades");
+// } else if (estoque === 0) {
+//     console.log("Esgotado");
+// }
